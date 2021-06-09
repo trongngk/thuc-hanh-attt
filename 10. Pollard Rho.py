@@ -1,12 +1,12 @@
 import math
-'''def gcd(a,b):
+def gcd(a,b):
   A=a
   B=b
   while B>0:
     R=A%B
     A=B
     B=R
-  return A'''
+  return A
 def Rho(n):
   a=2
   b=2
@@ -16,8 +16,8 @@ def Rho(n):
     b=(b*b+1)%n
     d=math.gcd(a-b,n)
     if n > d > 1:
-      return d,n/d
+      return d
     if n == d:
       return False
 n=int(input("Nhap n = "))
-print(f"d = {Rho(n)[0]}")
+print(f"d = {Rho(n)}")
